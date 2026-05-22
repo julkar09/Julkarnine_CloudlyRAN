@@ -1,0 +1,35 @@
+logger:
+  file: /var/log/open5gs/amf.log
+  level: info
+
+amf:
+  sbi:
+    - addr: 127.0.0.5
+      port: 7777
+  ngap:
+    - addr: 192.168.56.10  # Critical: This IP must match gNB target
+  guami:
+    - plmn_id:
+        mcc: 901
+        mnc: 70
+      amf_id:
+        region: 2
+        set: 1
+  tai:
+    - plmn_id:
+        mcc: 901
+        mnc: 70
+      tac: 1
+  plmn_support:
+    - plmn_id:
+        mcc: 901
+        mnc: 70
+      s_nssai:
+        - sst: 1
+  security:
+    integrity_order: [NIA1, NIA2, NIA0]
+    ciphering_order: [NEA0, NEA1, NEA2]
+
+parameter:
+  no_ipv6: true
+  use_mongodb: true

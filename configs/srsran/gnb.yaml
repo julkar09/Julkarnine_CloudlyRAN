@@ -1,0 +1,20 @@
+amf:
+  addr: 127.0.0.1
+  port: 38412
+
+cell_cfg:
+  dl_arfcn: 633334
+  band: 78
+  channel_bandwidth_MHz: 20
+  common_scs: 30
+  plmn: "90170"
+  tac: 1
+  pci: 1
+
+log:
+  level: info
+
+rf:
+  device: zmq
+  tx_gain: 60
+  rx_gain: 60
