@@ -1,4 +1,3 @@
-cat > /vagrant/README.md << 'EOF'
 # Julkarnine_CloudlyRAN
 
 5G Core + gNB simulation using Open5GS and srsRAN on Vagrant Ubuntu 22.04.
