@@ -45,7 +45,7 @@ cat > /vagrant/README.md << 'EOF'
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/Julkarnine_CloudlyRAN.git
+git clone https://github.com/julkar09/Julkarnine_CloudlyRAN.git
 cd Julkarnine_CloudlyRAN
 
 # Start VM
